@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESIRE8.XYZ</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+
+<body style="background-color:#000000;">
+
+<!-----HEADER----->
+<section class="header">
+    <nav>
+        <a class="picHover" href="index.html"><img src="images/360spin.gif"></a>
+        <div class="nav-links" id=navLinks>
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Contact US</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+<div class="text-box">
+    <h1>DESIRE8.XYZ</h1>
+    <p>Anything You Desire...</p>
+    <a href="https://www.instagram.com/desire8.xyz/" class="hero-btn">Instagram</a>
+    <a href="https://www.tiktok.com/@desire8.xyz" class="hero-btn">Tiktok</a>
+</div>
+
+</section>
+
+
+<!-----SUCCESS----->
+<section class="success" >
+    <h1>Tapped In</h1>
+    <p>Powered by DESIRE8.XYZ</p>
+    <div class="row">
+        <div class="success-col">
+            <img src="images/flex3.png">
+            <div class="layer">
+                <h3>Anything</h3>
+            </div>
+        </div>
+        <div class="success-col">
+            <img src="images/flex2.png">
+            <div class="layer">
+                <h3>You</h3>
+            </div>
+        </div>
+        <div class="success-col">
+            <img src="images/flex1.png">
+            <div class="layer">
+                <h3>Desire...</h3>
+            </div>
+        </div>
+    </div>
+</section>
+<hr>
+<!-----FAQ----->
+<section class="faq">
+    <h1>FAQ</h1>
+    <p>Frequently Asked Questions</p>
+
+    <button class="accordion">What is Desire?</button>
+    <div class="panel">
+      <p>Desire is a retailer that specializes in selling authentic, rare, and hard-to-find sneakers along with limited edition items. Desire offers a wide selection of sneakers from a variety of brands, including Nike, Adidas, and Jordan, as well as limited edition releases along with exclusive collaborations delivered with exceptional customer satisfaction. </p>
+    </div>
+    
+    <button class="accordion">How Can I shop with Desire?</button>
+    <div class="panel">
+      <p>Desire is constantly uploading new inventory to instagram @DESIRE8.XYZ. Turn notifications on: DON'T MISS OUT</p>
+    </div>
+    
+    <button class="accordion">What payment methods does Desire except?</button>
+    <div class="panel">
+      <p>Here at Desire we except multiple types of payments such as PayPal, ETransfer...</p>
+    </div>
+
+    <button class="accordion">Does Desire do shipping?</button>
+    <div class="panel">
+      <p>Desire is located here in Toronto, but we ship WORLDWIDE ;) </p>
+    </div>
+</section>
+<hr>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+<!------JavaScript for Toggel Menu------>
+<script>
+    var navLinks = document.getElementById("navLinks")
+
+    function showMenu(){
+        navLinks.style.right = "0"
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px"
+    }
+</script>
+
+</body>
+
+</html>

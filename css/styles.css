@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.hr{
+    height: 2; 
+    background-color: rgb(255, 255, 255);
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:url(images/360spin.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.picHover:hover{
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.3s;
+    box-shadow:  0 0 7px 7px #63B2CF;
+}
+nav{
+    display: flex;
+    padding: 0% 1.5%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 120px;
+}
+.nav-links{
+    flex: 1;
+    text-align: left;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 24px;
+
+}
+.nav-links ul li::after{
+    content:  '';
+    width: 0%;
+    height: 3px;
+    background: #63B2CF;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+} 
+.text-box h1{
+    font-size: 70px;
+}
+.text-box p{
+    margin: 5px 0 40px;
+    font-size: 17px;
+    color: #fff;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 3px solid #63B2CF;
+    padding:12px 34px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 5px solid #63B2CF;
+    box-shadow: 0 0 10px 10px #ffffff;
+    transition: 2s;
+}
+
+nav .fa{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .header{
+        min-height: 100vh;
+        width: 100%;
+        background: #262837;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+       
+    }
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;        
+    }
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+
+/*----Features----*/
+.features{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    padding-top: 70px;
+    color: #fff;
+}
+h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+h2{
+    font-size: 20px;
+    margin-top: 20px;
+    font-style: normal;
+}
+h3{
+    font-size: 27px;
+    font-weight: 600;
+}
+p{
+    
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 3%;
+    display: flex;
+    justify-content:space-between ;
+}
+
+
+
+
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+    .row2{
+        flex-direction: column;
+    }
+
+}
+
+/*------ Success ------*/
+.success{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: #ffffff;
+}
+
+.success-col{
+    flex-basis: 26%;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #63B2CF;
+}
+
+.success-col img{
+    width: 100%;
+    transition: 1s;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.success-col:hover{
+    background: #1c1c20;
+    box-shadow: 0 0 10px 10px #ffffff;
+    border: 4px solid #60b8d8;
+    transition: 1s;
+    color: rgb(0, 0, 0);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    transition: 0.5s;
+}
+
+.layer:hover h3{
+    bottom: 20%;
+    opacity: 1;
+
+}
+
+/*------ FAQS ------*/
+
+.faq {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: #ffffff;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: 3px solid #63B2CF;
+    transition: 0.4s;
+  }
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: #000000;
+    border: 4px solid #63B2CF;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: #000000;
+    display: none;
+    overflow: hidden;
+}
+
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 14px;
+    color: rgb(0, 183, 255);
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+/*------ TESTIMONIALS ------*/
+
+.testimonials {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: #ffffff;
+}
+
+.testimonial-col{
+    flex-basis: 30%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #031652;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+}
+.testimonial-col img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+.testimonial-col:hover{
+    background-color: #5688ce;
+    box-shadow: 0 0 20px 20px #5688ce;
+    border: 4px solid #73a7f0;
+}
+
+.testimonial-col p{
+    padding: 0;
+}
+
+.testimonial-col h3{
+    margin-top: 15px;
+    text-align: left;
+}
