@@ -1,0 +1,125 @@
+body section.location {
+  width: 80%;
+  margin: auto;
+  padding: 80px 0px 80px 0px;
+}
+
+body section.location iframe {
+  width: 100%;
+}
+
+section.contact-us {
+  width: 80%;
+  margin: auto;
+}
+
+section.contact-us div.row div.contact-col {
+  flex-basis: 48%;
+  margin-bottom: 30px;
+}
+
+section.contact-us div.row div.contact-col div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+section.contact-us div.row div.contact-col div p {
+  padding: 0;
+  color: #ffffff;
+}
+
+section.contact-us div.row div.contact-col div h5 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+section.contact-us div.row div.contact-col div span a {
+  font-size: 16px;
+  margin-bottom: 2px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+section.contact-us div.row div.contact-col div img {
+  width: 50px !important;
+  height: auto !important;
+}
+
+section.contact-us div.row div.contact-col input,
+section.contact-us div.row div.contact-col textarea {
+  width: -webkit-fill-available;
+  padding: 15px;
+  margin-bottom: 17px;
+  border: 5px solid #63b2cf;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+section.contact-us div.row div.contact-col input::placeholder,
+section.contact-us div.row div.contact-col textarea::placeholder {
+  color: #63b2cf;
+  opacity: 1;
+}
+
+section.contact-us div.row div.contact-col input:-ms-input-placeholder,
+section.contact-us div.row div.contact-col textarea:-ms-input-placeholder {
+  color: #63b2cf;
+  opacity: 1;
+}
+
+section.contact-us div.row div.contact-col input::-ms-input-placeholder,
+section.contact-us div.row div.contact-col textarea::-ms-input-placeholder {
+  color: #63b2cf;
+  opacity: 1;
+}
+
+section.contact-us
+  div.row
+  div.contact-col
+  div.contact-col
+  form
+  button.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #63b2cf;
+  border: 3px solid #63b2cf;
+  padding: 12px 34px;
+  font-size: 15px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+section.contact-us
+  div.row
+  div.contact-col
+  div.contact-col
+  form
+  button.hero-btn:hover {
+  border: 3px solid #63b2cf;
+  box-shadow: 0 0 20px 20px #63b2cf;
+  color: #63b2cf;
+  transition: 2s;
+}
+
+@media screen and (min-width: 601px) {
+  section.contact-us div.row {
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 600px) {
+    section.contact-us
+    div.row
+    div.contact-col
+    div.contact-col
+    form
+    button.hero-btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,11 @@
+section.notFound {
+  text-align: center;
+  padding: 10px 10px 50px 10px;
+  margin: auto;
+  width: 50%;
+}
+
+section.notFound p {
+  color: #000000;
+  font-size: xxx-large;
+}

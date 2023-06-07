@@ -1,0 +1,11 @@
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  color: #ffffff;
+}
+
+section.footer p span a {
+  color: #ffffff;
+  text-decoration: underline;
+}

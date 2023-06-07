@@ -1,0 +1,241 @@
+body header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(../images/logoClearLarge.png);
+  background-position: right;
+  background-size: initial;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+body section.landing div.text-box h1 {
+  font-size: 70px;
+}
+
+body section.landing div.text-box p {
+  margin: 5px 0 40px;
+  font-size: 17px;
+  color: #63b2cf;
+}
+
+body section.landing div.text-box a.button {
+  display: inline-block;
+  text-decoration: none;
+  color: #63b2cf;
+  border: 3px solid #63b2cf;
+  padding: 12px 34px;
+  font-size: 15px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+body section.landing div.text-box a.button:hover {
+  border: 3px solid #63b2cf;
+  box-shadow: 0 0 10px 10px #63b2cf;
+  transition: 2s;
+}
+
+body section.success {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  color: #63b2cf;
+}
+
+body section.success h1 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+body section.success p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+
+body section.success div.row {
+  margin-top: 3%;
+  justify-content: space-between;
+}
+
+body section.success div.row div.success-col {
+  flex-basis: 26%;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #63b2cf;
+}
+
+body section.success div.row div.success-col:hover {
+  background: #1c1c20;
+  box-shadow: 0 0 10px 10px #63b2cf;
+  border: 4px solid #60b8d8;
+  transition: 1s;
+  color: rgb(0, 0, 0);
+}
+
+body section.success div.row div.success-col img {
+  width: 100%;
+  display: block;
+  transition: 1s;
+}
+
+body section.success div.row div.success-col div.layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+body section.success div.row div.success-col div.layer h3 {
+  font-size: 27px;
+  font-weight: 600;
+  width: 100%;
+  color: #63b2cf;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  position: absolute;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+body section.success div.row div.success-col div.layer:hover h3 {
+  bottom: 20%;
+  opacity: 1;
+}
+
+body hr {
+  border: 2px solid #63b2cf;
+  width: 60%;
+  margin: auto;
+}
+
+body section.faq {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  color: #63b2cf;
+}
+
+body section.faq h1 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+body section.faq p,
+body section.faq button.accordion,
+body section.faq div.panel p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+
+body section.faq button.accordion {
+  background-color: #000000;
+  color: #63b2cf;
+  cursor: pointer;
+  padding: 18px;
+  margin-top: 0.6%;
+  width: 100%;
+  text-align: left;
+  border: 3px solid #63b2cf;
+  transition: 0.4s;
+  border-radius: 7px;
+  outline: none;
+}
+
+body section.faq button.accordion:after {
+  content: "+";
+  font-size: 28px;
+  font-weight: 100;
+  color: #63b2cf;
+  float: right;
+  margin-left: 5px;
+}
+
+body section.faq button.active.accordion:hover {
+  background-color: #000000;
+  border: 4px solid #63b2cf;
+}
+
+body section.faq button.active:after {
+  content: "-";
+  font-size: 28px;
+  font-weight: 100;
+  color: #63b2cf;
+  float: right;
+  margin-left: 5px;
+}
+
+body section.faq div.panel {
+  padding: 0 18px;
+  background-color: #000000;
+  display: none;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 601px) {
+  body section.landing div.text-box {
+    width: 90%;
+    color: #63b2cf;
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  body section.success div.row {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(../images/logoClearLarge.png);
+    background-position: 50% 75%;
+    background-size: 50%;
+    position: relative;
+    background-repeat: no-repeat;
+  }
+
+  body section.landing div.text-box {
+    margin: auto;
+    position: absolute;
+    top: 35%;
+    text-align: center;
+    color: #63b2cf;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+
+  body section.landing div.text-box h1 {
+    font-size: 40px;
+    margin: auto;
+    text-align: center;
+  }
+
+  body section.success div.row div.success-col div.layer h3 {
+    opacity: 1;
+  }
+
+  body section.success div.row div.success-col div.layer:hover h3 {
+    opacity: 1;
+  }
+}
